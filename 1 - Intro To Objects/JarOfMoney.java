@@ -1,19 +1,19 @@
 class JarOfMoney{
 
-  /*
-    Ideas to think about:
-      static vs instance(no keyword) varibles/methods
-        - does it depend on a specific object/instance, or it is more general?
-      get (accessor) vs set (mutator) methods
-        - these are associated with specific instance variables
-        - the var is typically private, can't be changed willy nilly/cause logical error
-        - control exactly what a user can do with a private variable
-      syntax errors (compiler no likey) vs logical errors (human brain no likey)
-
-    Classes can have:
-      variables/datafields (static or instance)
-      Constructors (instance)
-      methods/functions (static or instance)
+  /* OVERVIEW
+      Ideas to think about:
+        static vs instance(no keyword) varibles/methods
+            - does it depend on a specific object/instance, or it is more general?
+        get (accessor) vs set (mutator) methods
+          - these are associated with specific instance variables
+          - the var is typically private, can't be changed willy nilly/cause logical error
+          - control exactly what a user can do with a private variable
+        syntax errors (compiler no likey) vs logical errors (human brain no likey)
+  
+      Classes can have:
+        variables/datafields (static or instance)
+        Constructors (instance)
+        methods/functions (static or instance)
   */
 
   
@@ -28,8 +28,7 @@ class JarOfMoney{
 
 
   
-  /*
-    CONSTRUCTORS
+  /* CONSTRUCTORS
       the code that runs when you use the 'new' keyword
       makes a new instance of this class
       note the unique signature: nameOfClass(parameters)
@@ -52,9 +51,7 @@ class JarOfMoney{
 
 
   
-  /*
-    METHODS
-  */
+  /* METHODS */
   
   // instance methods
   public int getAmnt(){ // get method for (private int amnt)
@@ -75,7 +72,7 @@ class JarOfMoney{
     }
   }   
 
-  // static variables
+  // static methods
   public static int getNumJars{ // get method for (private static int numJars)
     return numJars;
   }
