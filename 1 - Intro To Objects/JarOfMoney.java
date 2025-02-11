@@ -24,7 +24,7 @@ class JarOfMoney{
   private int amnt=0;
 
   // static variables/datafields
-  private static int numJars
+  private static int numJars=0;
 
 
   
@@ -73,7 +73,7 @@ class JarOfMoney{
   }   
 
   // static methods
-  public static int getNumJars{ // get method for (private static int numJars)
+  public static int getNumJars(){ // get method for (private static int numJars)
     return numJars;
   }
   
