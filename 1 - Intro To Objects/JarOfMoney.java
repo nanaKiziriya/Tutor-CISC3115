@@ -1,0 +1,54 @@
+class JarOfMoney{
+
+  /*
+    Ideas to think about:
+      static vs instance(no keyword) varibles/methods
+        - does it depend on a specific object/instance, or it is more general?
+      get (accessor) vs set (mutator) methods
+        - these are associated with specific instance variables
+        - the var is typically private, can't be changed willy nilly/cause logical error
+        - control exactly what a user can do with a private variable
+      syntax errors (compiler no likey) vs logical errors (human brain no likey)
+
+    Classes can have:
+      variables/datafields (static or instance)
+      Constructors (instance)
+      methods/functions (static or instance)
+  */
+
+  
+  /* VARIABLES/DATAFIELDS */
+  
+  // instance variables/datafields
+  private int amnt=0;
+
+  // static variables/datafields
+  private static int numJars
+  
+  /*
+    CONSTRUCTORS
+      the code that runs when you use the 'new' keyword
+      makes a new instance of this class
+      note the unique signature: nameOfClass(parameters)
+      when you use the 'new' keyword, the compiler looks in the class for a constructor of the same type you wrote directly after
+        - e.g. j1 = new JarOfMoney(50,"red");
+        - the compiler looks for a constructor in class JarOfMoney with the parameters (int,String)
+        - if it doesn't find it, it'll end the execution and tell you where hit an error
+  */
+
+  // no-argument constructor
+  JarOfMoney(){
+    numJars++; // increment static jar counter variable
+  }
+
+  // constructor with specific argument type
+  JarOfMoney(int amnt){
+    if(amnt>=0) this.amnt=amnt; // logical error: can't have negative money!
+    numJars++; // increment static jar counter variable
+  }
+
+  // instance methods
+
+  // static variables
+  
+}
