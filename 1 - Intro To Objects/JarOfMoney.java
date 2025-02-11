@@ -17,6 +17,7 @@ class JarOfMoney{
   */
 
   
+  
   /* VARIABLES/DATAFIELDS */
   
   // instance variables/datafields
@@ -24,6 +25,8 @@ class JarOfMoney{
 
   // static variables/datafields
   private static int numJars
+
+
   
   /*
     CONSTRUCTORS
@@ -47,8 +50,34 @@ class JarOfMoney{
     numJars++; // increment static jar counter variable
   }
 
+
+  
+  /*
+    METHODS
+  */
+  
   // instance methods
+  public int getAmnt(){ // get method for (private int amnt)
+    return amnt;
+  }
+
+  public void deposit(int d){
+    amnt+=d;
+  }
+
+  public boolean withdraw(int w){
+    if(amnt<w){
+      // can also print a msg like "Oops! I don't have $(w) in this jar"
+      return false; // indicate failure
+    } else{ // syntax error: 'else' instead of 'if(amnt>=w)' to let compiler know a return statement will always be reached
+      amnt-=w;
+      return true; // indicate success
+    }
+  }   
 
   // static variables
+  public static int getNumJars{ // get method for (private static int numJars)
+    return numJars;
+  }
   
 }
